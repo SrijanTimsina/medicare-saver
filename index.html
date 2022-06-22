@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0"
+		/>
+		<title>Medicare Saver</title>
+		<link rel="stylesheet" href="./style.css" />
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+			integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		/>
+	</head>
+	<body>
+		<div class="screen">
+			<div class="container">
+				<div class="title-container flex-center">
+					<h2 class="title">
+						Seniors 64+ May Be Entitled To Get Up To
+						<span class="clr-red"
+							>$170/mo Back On Their Social Security</span
+						>
+						Checks Based on Their Zip code, Thanks To The
+						<span class="clr-red">Medicare Giveback Program</span>
+					</h2>
+					<div class="image flex-center">
+						<img
+							src="./resources/home-image.jpg"
+							class="home-image"
+						/>
+						<h2 class="image-text">
+							Take this short quiz to see if you qualify
+						</h2>
+					</div>
+				</div>
+				<div class="form-container">
+					<div class="form-questions">
+						<div class="question-container flex-center active" id="q1">
+							<p class="question">
+								Are You Currently Enrolled In Medicare?
+							</p>
+							<button class="q-btn q1-btn">Yes</button>
+							<button class="q-btn q1-btn">No</button>
+						</div>
+						<div class="question-container hidden flex-center" id="q2">
+							<p class="question">Do you live in the USA?</p>
+							<button class="q-btn q2-btn">Yes</button>
+							<button class="q-btn q2-btn">No</button>
+						</div>
+					</div>
+					<div class="form-answers hidden" id="form-answers">
+						<div id="load-1" class="load-box hidden flex-center">
+							Reviewing Your Answers...
+						</div>
+						<div id="load-2" class="load-box hidden flex-center">
+							Matching You with the Best Options...
+						</div>
+						<div id="load-3" class="load-box hidden flex-center">
+							Confirming Eligibility...
+						</div>
+						<div id="qualify" class="qualify-box hidden flex-center">
+							<div class="qualify-heading clr-cyan">
+								Congratulations!
+							</div>
+							<div class="description">
+								You Pre-Qualify for
+								<strong class="clr-red">
+									available benefits in your area!
+								</strong>
+								This includes the
+								<strong class="clr-cyan">
+									$5,100 Extra Help Medicare Giveback Program</strong
+								>
+								and
+								<strong class="clr-cyan"
+									>up to $2,040 added to your social security
+									check!</strong
+								>
+								<br />Your Medicare specialist may even be able to
+								qualify you for
+								<strong class="clr-cyan"
+									>a $0/month premium plan
+								</strong>
+								with great coverage!
+							</div>
+							<div class="call flex-center">
+								<p>
+									<strong
+										>Call us now to see if you qualify before these
+										Benefits are no longer available</strong
+									>
+								</p>
+								<h2 class="call-text">
+									<strong> TAP TO CALL</strong>
+								</h2>
+								<span class="phone">
+									<a href="tel:+18449400741" class="call-btn"
+										><span class="phone-animation"
+											><i class="fa-solid fa-phone"></i> </span
+										>(855) 585-5518</a
+									>
+								</span>
+								<This class="expires-time">
+									Act quickly! <br /><br />This pre-approval expires in
+									<strong class="clr-red"
+										><span id="count-time">02:00</span></strong
+									>
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="logo-container flex-center">
+					<div class="line"></div>
+					<img src="./resources/logo.png" class="logo"/>
+				</div>
+			</div>
+		</div>
+		<div class="footer">
+            <div class="footer-container">
+
+                <div class="footer-text">
+                    <p>
+                        <strong>DISCLAIMER:</strong> ENROLLMENT IN THE DESCRIBED
+                        PLAN TYPE MAY BE LIMITED TO CERTAIN TIMES OF THE YEAR UNLESS
+                        YOU QUALIFY FOR A SPECIAL ENROLLMENT PERIOD. PLAN
+                        AVAILABILITY VARIES BY REGION AND STATE.
+                    </p>
+                    <p>
+                        MedicareSaver is a referral source that provides information
+                        and access to a helpline to match consumers with companies
+                        that may provide certain insurance coverage to them.
+                        MedicareSaver does not act as an insurance broker and does
+                        not make decisions about insurance coverage that may be
+                        available to you. MedicareSaver doesn’t promise a specific
+                        outcome or the results you may achieve by calling the
+                        helpline. The helpline is free to call but the services or
+                        programs that you pursue may have costs associated with
+                        them. Neither MedicareSaver nor any of the supplemental
+                        insurance plans to which you may be connected are endorsed
+                        by the U.S. Government or the federal Medicare program.
+                    </p>
+                    <p>
+                        *Certain beneficiaries may qualify for help paying their
+                        Part B Premium ($144.00 as of 2022) as part of each States
+                        Medicaid/or Medical Assistance Program. Our partners assists
+                        beneficiaries with applications and initial eligibility
+                        screening, but only the relevant state agency may determine
+                        eligibility. Provision of financial information to our
+                        partners is optional and does not affect enrollment
+                        eligibility. Residents of certain regions may also qualify
+                        for a Part B Buyback Plan covering up to $135 of the Part B
+                        Premium.
+                    </p>
+                    <p>
+                        This advertisement is a solicitation to sell insurance, and
+                        is coming from a licensed health insurance agency, and not
+                        from CMS or a government agency.
+                    </p>
+                </div>
+                <div class="footer-links">
+                    <p>
+                        <a href="https://medicaresaver.org/privacy.php"
+						>Privacy Policy</a
+                        >
+                        /
+                        <a href="https://medicaresaver.org/terms.php"
+						>Terms &amp; Conditions</a
+                        >
+                    </p>
+                </div>
+            </div>
+        </div>
+        <script src="./index.js"></script>
+        </body>
+</html>
