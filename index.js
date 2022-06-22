@@ -10,6 +10,8 @@ const load2 = document.getElementById("load-2");
 const load3 = document.getElementById("load-3");
 const qualify = document.getElementById("qualify");
 
+const countTimer = document.getElementById("count-time");
+
 let isEnrolled = true;
 let residentUSA = true;
 
@@ -69,6 +71,27 @@ q2Btn.forEach((el) => {
 			qualify.classList.add("active");
 			qualify.classList.remove("hidden");
 			qualify.classList.add("fade-in");
+			startTimer();
 		}, 6000);
 	});
 });
+
+const startTimer = () => {
+	let timer = 120;
+	const countDownTimer = setInterval(() => {
+		timer = timer - 1;
+		let min = Math.floor(timer / 60);
+		let sec = Math.floor(timer % 60);
+		let minutes = `0${min}`;
+		let seconds = sec;
+		if (sec < 10) {
+			seconds = `0${sec}`;
+		}
+
+		countTimer.innerHTML = `${minutes}:${seconds}`;
+
+		if (timer < 2) {
+			clearInterval(countDownTimer);
+		}
+	}, 1000);
+};
