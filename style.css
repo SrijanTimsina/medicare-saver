@@ -37,7 +37,7 @@
   line-height: 1.5em;
 }
 
-@media screen and (max-width: 768px) {
+@media (max-width: 767px) {
   .screen .container .title-container .title {
     font-size: 20px;
   }
@@ -53,7 +53,7 @@
   height: auto;
 }
 
-@media screen and (max-width: 768px) {
+@media (max-width: 767px) {
   .screen .container .title-container .image .home-image {
     width: 80%;
   }
