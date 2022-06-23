@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Roboto:ital@1&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Roboto&display=swap");
 
 .screen {
 	.flex-center {
@@ -137,6 +137,18 @@
 					}
 				}
 			}
+			.active {
+				display: flex;
+			}
+			.hidden {
+				display: none;
+			}
+			// .question-container,
+			// .load-box,
+			// .qualify-box,
+			// .form-answers {
+			// 	display: none;
+			// }
 		}
 		.logo-container {
 			width: 100%;
@@ -152,12 +164,6 @@
 				height: auto;
 			}
 		}
-	}
-	.hidden {
-		display: none;
-	}
-	.active {
-		display: flex;
 	}
 
 	.fade-in {
